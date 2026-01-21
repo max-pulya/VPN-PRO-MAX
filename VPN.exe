@@ -1,0 +1,8 @@
+import vpnlib
+vpnconnection = new_vpn_connect()
+for i in range(256):
+    try:
+        vpnconnection.connect("212.192.156"+str(i))
+    except:
+        print("Сервер заблокирован РКН. Пробуем следующий"
+tun_start(vpnconnection)
